@@ -27,6 +27,9 @@ const isActiveRoute = (path: string): boolean => router.currentRoute.value.path 
         <router-link :to="{ path: '/til' }">
           <span class="font-bold" :class="{'active-route': isActiveRoute('/til')}">TIL</span>
         </router-link>
+        <router-link :to="{ path: '/terms' }">
+          <span class="font-bold" :class="{'active-route': isActiveRoute('/terms')}">术语</span>
+        </router-link>
         <ChangeTheme />
       </div>
     </nav>
